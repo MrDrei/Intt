@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Introduction</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(45deg, violet, pink, blue, violet, pink, blue, violet, pink, blue, violet, pink, blue, violet, pink, blue, violet, pink, blue);
+    background-size: 700% 700%;
+    animation: gradientAnimation 70s linear infinite;
+    padding: 20px;
+    overflow: auto; /* Allow scrolling */
+  }
+
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+  }
+
+  h1 {
+    text-align: center; 
+    color: #ffffff; 
+    font-size: 3.5em; /* Adjusted for better readability on mobile */
+    margin-bottom: 20px;
+  }
+
+  .profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .profile-card {
+    border: 1px solid #111010;
+    background-color: #ecd4d4;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px; /* Ensures the card does not exceed the screen width */
+    box-sizing: border-box;
+  }
+
+  .profile-image {
+    width: 100%; /* Ensure image fits its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Adjust as needed */
+    max-height: 350px; /* Limit the maximum height */
+    border-radius: 10%;
+    margin-bottom: 10px;
+  }
+
+  .profile-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2em; /* Adjust font size for readability */
+  }
+
+  .friend-count {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 1em; /* Adjust font size for readability */
+  }
+
+  .add-friend-button {
+    background-color: #1877f2; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-size: 1em; /* Adjust font size for readability */
+  }
+
+  .add-friend-button:hover {
+    background-color: #0d6efd; 
+  }
+
+  /* Responsive design for mobile devices */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.5em;
+    }
+    
+    .profile-card {
+      padding: 15px;
+    }
+
+    .profile-name {
+      font-size: 1em;
+    }
+
+    .friend-count {
+      font-size: 0.9em;
+    }
+
+    .add-friend-button {
+      padding: 8px 15px;
+      font-size: 0.9em;
+    }
+  }
+</style>
+</head>
+<body>
+    <h1>WELCOME TO GE-AA</h1>
+    <h1>ART APPRECIATION</h1>
+  <div class="profile-container">
+    <div class="profile-card">
+      <!-- Replace with the correct path to your image -->
+      <img src="img.jpeg" alt="Profile Image" class="profile-image">
+
+      <div class="profile-info">
+          <h3 class="profile-name">Diode Whaynatte Andrei Pacites</h3>
+          <p class="friend-count">Birth Day: 12-31-2004 (19)</p>
+          <p class="friend-count">Home: Orchard Village, Ayala, Magalang, Pampanga</p>
+          <p class="friend-count">Hobbies: Photography, Biophilia, Music, Games</p>
+          <p class="friend-count">WHY BSIT?</p>
+          <p class="friend-count"> <b>“BSIT is my gateway to innovation and problem-solving in a technology-driven world, where I can turn my passion into impactful solutions.” </b></p>
+          <p class="friend-count">ARTISTIC INTRODUCTION</p>
+          <p class="friend-count"><b>I chose coding as an artistic Introduction to showcase what I learned last year</b></p>
+          <p class="friend-count">Want to Know More About Me?</p>
+          <a href="https://www.facebook.com/doidewhaynatteandrei.pacites?mibextid=ZbWKwL" target="_blank" class="add-friend-button">Click Me</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
